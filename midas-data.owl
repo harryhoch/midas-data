@@ -1,0 +1,592 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://midasnetwork.us/datasets#"
+     xml:base="http://midasnetwork.us/datasets"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://midasnetwork.us/datasets"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000000 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000000">
+        <rdfs:label xml:lang="en">Diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000001 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000001">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000000"/>
+        <rdfs:comment>TBD: Map to ICD-10 U07.1</rdfs:comment>
+        <rdfs:label xml:lang="en">COVID-19</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000002 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000002">
+        <rdfs:comment>Granularity of the included data</rdfs:comment>
+        <rdfs:label xml:lang="en">Scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000003 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000003">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000002"/>
+        <rdfs:label xml:lang="en">Molecular</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000004 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000004">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000002"/>
+        <rdfs:label xml:lang="en">Animal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000005 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000005">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000002"/>
+        <rdfs:label xml:lang="en">Population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000006 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000006">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000002"/>
+        <rdfs:label xml:lang="en">Literature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000007 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000007">
+        <rdfs:label xml:lang="en">Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000008 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000008">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000007"/>
+        <rdfs:label xml:lang="en">Software</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000009 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000009">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000007"/>
+        <rdfs:label xml:lang="en">Dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000010 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000010">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000007"/>
+        <rdfs:label xml:lang="en">Catalog</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000011 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000011">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000003"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000010"/>
+        <rdfs:label xml:lang="en">Host Genetics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000012 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000012">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000003"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000009"/>
+        <rdfs:label xml:lang="en">Viral Sequences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000013 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000013">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000003"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000008"/>
+        <rdfs:label xml:lang="en">Phylogenetics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000014 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000014">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000003"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000008"/>
+        <rdfs:label xml:lang="en">Sequence Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000016 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000016">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000004"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000009"/>
+        <rdfs:label xml:lang="en">Disease Transmission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000017 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000017">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000018"/>
+        <rdfs:label xml:lang="en">Forecasting/SIR models</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000018 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000018">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000008"/>
+        <rdfs:label xml:lang="en">Parameter Estimation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000020 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000020">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000008"/>
+        <rdfs:label xml:lang="en">Data retrieval or API</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000021 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000021">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000008"/>
+        <rdfs:label xml:lang="en">Test results</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000022 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000022">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000008"/>
+        <rdfs:label xml:lang="en">Agent-Based model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000023 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000023">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000008"/>
+        <rdfs:label xml:lang="en">Transmission Risk Modeling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000024 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000024">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000007"/>
+        <rdfs:comment>should dashboards be population level by definition?</rdfs:comment>
+        <rdfs:label xml:lang="en">Dashboard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000025 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000025">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000024"/>
+        <rdfs:label xml:lang="en">Test results</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000026 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000026">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000024"/>
+        <rdfs:label xml:lang="en">Case counts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000027 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000027">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000024"/>
+        <rdfs:label xml:lang="en">Case estimation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000028 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000028">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000027"/>
+        <rdfs:label xml:lang="en">Forecasting/SIR models</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000029 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000029">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000024"/>
+        <rdfs:label xml:lang="en">Media coverage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000030 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000030">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000024"/>
+        <rdfs:label xml:lang="en">Hospital Utilization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000031 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000031">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000024"/>
+        <rdfs:label xml:lang="en">Flights</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000032 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000032">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000002"/>
+        <rdfs:label xml:lang="en">Individual</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000033 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000033">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000009"/>
+        <rdfs:comment>Spreadsheet of individual cases (de-identified)</rdfs:comment>
+        <rdfs:label xml:lang="en">Line Lists</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000034 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000034">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000009"/>
+        <rdfs:comment>Includes positive tests, hospitalizations, and deaths.</rdfs:comment>
+        <rdfs:label xml:lang="en">Case Counts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000035 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000035">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000045"/>
+        <rdfs:label xml:lang="en">Mobility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000037 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000037">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000009"/>
+        <rdfs:label xml:lang="en">Parameter Estimates</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000038 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000038">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000037"/>
+        <rdfs:label xml:lang="en">Forecasts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000039 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000039">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000037"/>
+        <rdfs:label xml:lang="en">Expert opinion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000040 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000040">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000009"/>
+        <rdfs:label xml:lang="en">Contact rates</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000041 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000041">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000009"/>
+        <rdfs:label xml:lang="en">Social media</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000042 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000042">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000034"/>
+        <rdfs:label xml:lang="en">Hospital Utilization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000043 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000043">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000034"/>
+        <rdfs:label xml:lang="en">Testing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000044 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000044">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000048"/>
+        <rdfs:label xml:lang="en">Interventions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000045 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000045">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000009"/>
+        <rdfs:label xml:lang="en">Behavior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000046 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000046">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000009"/>
+        <rdfs:label xml:lang="en">Aid and responses</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000047 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000047">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000009"/>
+        <rdfs:label xml:lang="en">Risk factors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000048 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000048">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000009"/>
+        <rdfs:label xml:lang="en">Policy indicators</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000049 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000049">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000009"/>
+        <rdfs:label xml:lang="en">Event cancellations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000050 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000050">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000009"/>
+        <rdfs:label xml:lang="en">Demographics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000051 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000051">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000009"/>
+        <rdfs:label xml:lang="en">Health systems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000052 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000052">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000034"/>
+        <rdfs:label xml:lang="en">Deaths</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000053 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000053">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000034"/>
+        <rdfs:label xml:lang="en">Excess mortality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000054 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000054">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000051"/>
+        <rdfs:label xml:lang="en">Care capacity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000055 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000055">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000045"/>
+        <rdfs:label xml:lang="en">Transmission settings</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000056 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000056">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000045"/>
+        <rdfs:label xml:lang="en">Transmission settings</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000057 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000057">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000034"/>
+        <rdfs:label xml:lang="en">Hospitalizations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000058 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000058">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000048"/>
+        <rdfs:label xml:lang="en">Regulatory complaints</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000059 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000059">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000009"/>
+        <rdfs:label xml:lang="en">Mental health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000060 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000060">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000005"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000009"/>
+        <rdfs:label xml:lang="en">Economic impacts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://midasnetwork.us/datasets#OWLClass_00000000000000000061 -->
+
+    <owl:Class rdf:about="http://midasnetwork.us/datasets#OWLClass_00000000000000000061">
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#OWLClass_00000000000000000048"/>
+        <rdfs:label xml:lang="en">Testing availability</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
