@@ -181,18 +181,6 @@
     
 
 
-    <!-- http://midasnetwork.us/datasets#MIDAS_DATA000015 -->
-
-    <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000015">
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000008"/>
-        <MIDAS_DATA000003>Sequence data - host, viral, or other. Could include DNA, RNA, proteins,etc.</MIDAS_DATA000003>
-        <rdfs:comment>subclass/refine as necessary.  Look to ontologies of sequence data if needed</rdfs:comment>
-        <rdfs:label xml:lang="en">Genetic Sequences</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://midasnetwork.us/datasets#MIDAS_DATA000018 -->
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000018">
@@ -252,7 +240,6 @@
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000030">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000007"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000033"/>
         <MIDAS_DATA000003>Papers describing modeling studies</MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Modeling studies</rdfs:label>
     </owl:Class>
@@ -273,7 +260,6 @@
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000033">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000007"/>
-        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000011"/>
         <MIDAS_DATA000003>A catalog focused on a specific disease</MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Disease-specific collection</rdfs:label>
     </owl:Class>
@@ -401,6 +387,7 @@
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000051">
         <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000002"/>
+        <rdfs:subClassOf rdf:resource="http://midasnetwork.us/datasets#MIDAS_DATA000009"/>
         <MIDAS_DATA000003>Includes diagnosed cases, deaths, hospitalizations. Also known as line lists.</MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Individual cases reported</rdfs:label>
     </owl:Class>
