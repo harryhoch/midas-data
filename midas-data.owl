@@ -63,6 +63,7 @@
     <!-- http://midasnetwork.us/datasets#MIDAS_DATA000002 -->
 
     <owl:Class rdf:about="http://midasnetwork.us/datasets#MIDAS_DATA000002">
+        <MIDAS_DATA000003>The subject of the digital object - what it is about.</MIDAS_DATA000003>
         <rdfs:label xml:lang="en">Topic</rdfs:label>
     </owl:Class>
     
